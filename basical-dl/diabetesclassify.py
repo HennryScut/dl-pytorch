@@ -17,7 +17,7 @@ class DiabetesDataset(Dataset):
         return self.len
 
 
-dataset = DiabetesDataset('/data/diabetes.csv.gz')
+dataset = DiabetesDataset('../data/diabetes.csv.gz')
 train_loader = DataLoader(dataset=dataset, batch_size=32, shuffle=True, num_workers=2)
 
 
